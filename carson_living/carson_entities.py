@@ -93,6 +93,8 @@ pmc: {pmc_name}"""
         self._update_doors()
 
     def _update_cameras(self):
+        self._cameras = {}
+        return
         # Only Support Eagle_Eye right now
         # Update existing via Eagle Eye.
         self._eagleeye.update()
